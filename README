@@ -1,5 +1,17 @@
+
+![Tutorial Django](./assets/img/logo.png)
+
+documentacion: https://docs.djangoproject.com/en/5.1/
+
 Description
 
 build virtual environment:
 1. open console PowerShell
 2. run command Activate.ps1 
+
+
+
+- python manage.py runserver
+
+Este comando inicia un servidor de desarrollo web local en tu computadora, específicamente diseñado para ejecutar tu aplicación Django. Este servidor te permite ver los cambios que realices en tu código de forma casi instantánea, sin necesidad de reiniciar el servidor cada vez.
+
