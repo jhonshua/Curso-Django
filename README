@@ -10,8 +10,10 @@ build virtual environment:
 2. run command Activate.ps1 
 
 
-
 - python manage.py runserver
 
 Este comando inicia un servidor de desarrollo web local en tu computadora, específicamente diseñado para ejecutar tu aplicación Django. Este servidor te permite ver los cambios que realices en tu código de forma casi instantánea, sin necesidad de reiniciar el servidor cada vez.
 
+- django-admin startproject: Este comando se utiliza para crear un nuevo proyecto Django
+
+- python manage.py startapp: Este comando se utiliza dentro de un proyecto Django existente para crear una nueva aplicación.
