@@ -1,10 +1,9 @@
 # from django.shortcuts import render
-from  django.http import HttpResponse
+from django.http import HttpResponse
 from django.shortcuts import  render
 from .models import Project, Task
 
 # Create your views here.
-
 
 def index(request):
     title = 'Django Course!!'
@@ -24,11 +23,13 @@ def hello(request, username):
 def projects(request):
     # projects = list(Project.objects.values())
     projects = Project.objects.all()
-    return render(request, 'projects.html', {
+    return render(request, 'projects/projects.html', {
         'projects': projects
     })
 
 def tasks(request):
-    return render(request,'tasks.html')
-
+    tasks = Task.objects.all()
+    return render(request, 'tasks/tasks.html', {
+        'tasks': tasks
+    })
 
