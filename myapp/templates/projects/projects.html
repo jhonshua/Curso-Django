@@ -1,14 +1,20 @@
-{% extends 'layouts/base.html' %}
+{% extends 'layouts/base.html' %} {% block content %}
+<div>
+  <div class="title">
+    <h1>Proyecto</h1>
+  </div>
 
-{% block content %}
+  <div>
+    <ul>
+      {% for project in projects %}
 
-<h1>project</h1>
+      <li>
+        <h3> ID {{ project.id }} - {{ project.name }}</h3> 
+    </li>
 
-{% for project in projects %}
-<div> 
-    <h1>{{project.name}}</h1>
-
+      {% endfor %}
+    </ul>
+  </div>
 </div>
-{% endfor %}
 
 {% endblock %}

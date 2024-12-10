@@ -1,10 +1,74 @@
+{% extends 'layouts/base.html' %} {% block content %} {% load static %}
 
-{% extends 'layouts/base.html' %}
+<div class= "index">
+  <div class="title">
+    <h1>{{title}}</h1>
+  </div>
 
-{% block content %}
+  <img src="{% static 'python-django.png' %}" alt="img" width="370" style="margin: 50px"
+/>
 
-<h1>{{title}}</h1>
+  <div>
+    Django es un framework de desarrollo web de código abierto y gratuito,
+    construido sobre el lenguaje de programación Python. Esto significa que es
+    una herramienta que te proporciona una estructura y conjunto de herramientas
+    para crear aplicaciones web de manera más rápida y eficiente.
+  </div>
 
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, dolor? Aperiam, deserunt quidem nam sunt est quaerat nesciunt non repellat sit alias dolore nobis animi molestias ducimus qui eligendi itaque.</p>
+  <div>
+    <h2>¿Por qué usar Django?</h2>
 
+    Desarrollo rápido: Django te ofrece una gran cantidad de funcionalidades
+    preconstruidas, como sistemas de autenticación, administración de usuarios,
+    formularios y ORM (Object-Relational Mapper), lo que te permite enfocarte en
+    la lógica específica de tu aplicación.
+  </div>
+
+  <div>
+    <h2>Escalabilidad:</h2>
+    Es capaz de manejar desde pequeños proyectos hasta grandes aplicaciones con
+    alto tráfico.
+  </div>
+
+  <div>
+    <h2>Gran comunidad:</h2>
+    Cuenta con una comunidad activa y extensa que ofrece soporte, documentación
+    y recursos adicionales.
+  </div>
+
+  <div>
+    <h2>Versátil:</h2>
+    Se puede utilizar para desarrollar una amplia variedad de aplicaciones web,
+    desde blogs y sitios de comercio electrónico hasta redes sociales y
+    plataformas de aprendizaje en línea.
+  </div>
+
+  <div>
+    <h1>¿Cómo funciona Django?</h1>
+
+    <h3>
+      Django sigue el patrón de arquitectura Modelo-Vista-Controlador (MVC).
+      Esto significa que separa la aplicación en tres partes principales:
+    </h3>
+
+    <div>
+      <img src="{% static 'Django_mtv.png' %}" alt="img" width="500" style="margin: 50px"/>
+    </div>
+  </div>
+
+  <div>
+    <h2>Modelo:</h2>
+    Representa los datos de tu aplicación y cómo se relacionan entre sí. Vista:
+    Se encarga de la presentación de los datos, es decir, de cómo se muestran en
+    el navegador. Controlador: Maneja las solicitudes de los usuarios y las
+    respuestas del servidor.
+  </div><br>
+
+  <div>
+    En resumen, Django es una excelente opción para desarrollar aplicaciones web
+    en Python de forma rápida, segura y escalable. Si estás buscando una
+    herramienta que te facilite el proceso de desarrollo y te permita crear
+    aplicaciones robustas, Django es definitivamente una opción a considerar.
+  </div>
+</div>
 {% endblock %}

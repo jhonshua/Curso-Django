@@ -1,0 +1,85 @@
+body {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 16px; /* Ajusta el tamaño según tus preferencias */
+    line-height: 1.6; /* Ajusta el interlineado */
+    background: #053c74;
+    color: whitesmoke;
+    letter-spacing: 1px; 
+}
+
+.title{
+  text-align: center;
+}
+
+.index{
+  margin-bottom: 150px;
+}
+
+.img{
+  margin-top: 100px;
+  margin-bottom: 300px;
+}
+
+.navbar {
+    background-color: #0995e6; /* Dark background color */
+    display: flex; /* Flexbox for horizontal layout */
+    justify-content: center; /* Center the navbar horizontally */
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex; /* Flexbox for horizontal list items */
+  }
+  
+  .navbar li {
+    margin: 0 20px; /* Spacing between list items */
+  }
+  
+  .navbar a {
+    color: #fff; /* White text color */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 35px; /* Ajusta este valor según tus preferencias */ 
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+  }
+  
+  .navbar a:hover {
+    color: #091a2e; /* Color del texto al pasar el mouse */
+    background-color: #fff; /* Fondo blanco al pasar el mouse */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    padding: 8px 16px; /* Aumenta un poco el padding para destacar el efecto */
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 10px;
+}
+
+.card {
+    background: whitesmoke;
+    color: black;
+    padding: 10px;
+    margin-bottom: 2px;
+}
+
+.input {
+    background: wheat;
+    padding: 10px;
+    text-align: center;
+    display: block;
+}
+
+.button {
+  background-color: #4173df; /* Green */
+  border:#ffffff;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+

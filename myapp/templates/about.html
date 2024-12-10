@@ -1,12 +1,83 @@
-{% extends 'layouts/base.html' %}
+{% extends 'layouts/base.html' %} {% block content %}
+{% load static %}
+<div>
+  <div class="title">
+    <h1>About.</h1>
+  </div>
 
-{% block content %}
+  <div>
+    <div>
+      <h2>Crear proyectos:</h2>
+      Los usuarios pueden definir nuevos proyectos, estableciendo un marco para
+      organizar las tareas.
+    </div>
+    <img src="{% static 'template.png' %}" alt="img" width="500" style="margin: 50px"
+    />
+    <div>
+      <h2>Crear tareas:</h2>
+      Dentro de cada proyecto, los usuarios pueden agregar tareas específicas,
+      detallando lo que necesita ser realizado.
+    </div>
+    <div>
+      <h2>Asignar tareas a proyectos:</h2>
+      Existe una relación directa entre las tareas y los proyectos, permitiendo
+      organizar y categorizar las tareas de manera eficiente.
+    </div>
+    <div>
+      <h1>Resumen de las funcionalidades clave:</h1>
+    </div>
 
-<h1>About</h1>
+    <div>
+      <h2>Gestión de proyectos:</h2>
+      Creación, edición y posiblemente eliminación de proyectos. Gestión de
+      tareas: Creación, edición, eliminación y asignación de tareas a proyectos
+      específicos.
+    </div>
 
-<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, hic possimus! Veritatis blanditiis enim corporis recusandae repellat nihil architecto modi eveniet pariatur expedita ipsa numquam sunt, libero vero quaerat eius hic. Voluptas veniam atque fuga at cum ea nesciunt dolore, nemo perspiciatis nisi, possimus quaerat, accusamus fugit facilis optio eaque maiores aperiam sunt quisquam repellendus ratione commodi inventore itaque vero? Magni asperiores sequi laborum doloribus quaerat minus natus molestiae, nulla quisquam, ratione enim quos, dolorem corrupti modi earum dicta error numquam totam sit corporis dolore! Sint libero dolor obcaecati ipsa molestias. Consequatur voluptates eligendi iusto debitis possimus adipisci quidem natus.</p>
+    <div>
+      <h2>Relación entre proyectos y tareas:</h2>
+      Una estructura clara que vincula las tareas a los proyectos
+      correspondientes, facilitando la organización y búsqueda.
+    </div>
 
-<p>Website created by {{ username }}</p>
+    <div>
+      <h2>
+        Posibles características adicionales (dependiendo de tu implementación):
+      </h2>
+      Estados de las tareas: Podrías incluir estados como "Pendiente", "En
+      progreso", "Completada" para rastrear el avance de cada tarea.
+    </div>
 
+    <div>
+      <h2>Aspectos técnicos que podrías haber utilizado:</h2>
+      Modelos de Django: Para representar los conceptos de "Proyecto" y "Tarea"
+      en la base de datos.
+    </div>
+
+    <div>
+      <h2>Formularios de Django:</h2>
+      Para crear interfaces de usuario para agregar, editar y eliminar proyectos
+      y tareas.
+    </div>
+
+    <img src="{% static 'form.png' %}" alt="img" width="370" style="margin: 50px"
+    />
+
+    <div>
+      <h2>Vistas de Django:</h2>
+      Para manejar las solicitudes HTTP y generar las respuestas
+      correspondientes (por ejemplo, mostrar listas de proyectos y tareas,
+      procesar formularios).
+    </div>
+
+    <div>
+      <h2>Plantillas de Django:</h2>
+      Para crear la interfaz de usuario de la aplicación. Preguntas para una
+      mejor comprensión:
+    </div>
+  </div>
+
+  <p>Website created by {{ username }}</p>
+</div>
 
 {% endblock %}

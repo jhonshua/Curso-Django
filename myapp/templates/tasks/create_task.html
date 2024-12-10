@@ -1,15 +1,13 @@
-{% extends 'layouts/base.html' %} {% block content %}
+{% extends 'layouts/base.html' %} {% block content %}{% load static %}
+<div>
+  <div class="title">
+    <h1>Crear nueva tarea.</h1>
+  </div>
 
+  <form method="POST">
+    {% csrf_token %} {{form.as_p}}
 
-<h1>Create a new task</h1>
-
-
-<form method="POST" >
-    {% csrf_token %}
-    {{form.as_p}}
-
-  <button>Save</button>
-
-</form>
-
-{% endblock %} 
+    <button class="button">Guardar.</button>
+  </form>
+</div>
+{% endblock %}
