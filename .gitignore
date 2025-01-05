@@ -1,4 +1,29 @@
-venv
+# Django-specific
+.DS_Store
+local.py
 db.sqlite3
-__pycache__
-staticfiles
+*.sqlite3
+*.db
+.pytest_cache
+media/
+static/
+
+# Python
+*.pyc
+*.pyo
+__pycache__/
+.eggs/
+*.egg-info/
+
+# IDE files
+.idea/
+.vscode/
+
+# Local configuration
+env/
+venv/
+*.env
+.venv
+
+# Logs
+logs/

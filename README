@@ -17,3 +17,18 @@ Este comando inicia un servidor de desarrollo web local en tu computadora, espec
 - django-admin startproject: Este comando se utiliza para crear un nuevo proyecto Django
 
 - python manage.py startapp: Este comando se utiliza dentro de un proyecto Django existente para crear una nueva aplicación.
+
+---------------------------------------------------------------
+El archivo requirements.txt es una herramienta esencial para gestionar las dependencias de tu proyecto Django. Al seguir estos pasos y recomendaciones, podrás mantener tu proyecto organizado y reproducible.
+
+¿Cómo instalar las dependencias desde requirements.txt?
+
+Bash
+
+pip install -r requirements.txt
+
+Este comando generará un archivo requirements.txt con todas las librerías instaladas en tu entorno virtual.
+
+pip freeze > requirements.txt
+
+
