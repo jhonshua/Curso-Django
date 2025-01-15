@@ -2,23 +2,30 @@
 
 {% block content %}
 
+<h1>Tasks</h1>
 
-<h1>tasks</h1>
-
-{% for task in tasks %}
-<div> 
-    <h1>{{task.title}}</h1>
-
-    <h1>{% if task.done == False %} ⏱ {% else %} ✅ {% endif %}  {{task.title}} </h1>
-
-    <h3>{{task.description}}</h3>
-    <button>
-        Delete
-    </button>
-    <button>
-        ✅ Done
-    </button>
-</div>
-{% endfor %}
+<table class="table">
+    <thead>
+        <tr>
+            <th>Status</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for task in tasks %}
+        <tr>
+            <td>{% if task.done %} ✅ {% else %} ⏱ {% endif %}</td>
+            <td>{{ task.title }}</td>
+            <td>{{ task.description }}</td>
+            <td>
+                <a href="{% url 'delete_task' task.id %}" onclick="return confirm('¿Estás seguro de eliminar esta tarea?');">Delete</a>
+                <button>✅ Done</button>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
 
 {% endblock %}
